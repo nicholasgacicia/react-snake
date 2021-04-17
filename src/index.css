@@ -51,13 +51,13 @@ main {
 }
 
 #GameBoard #GameOverText {
-  color: #ca0000;
+  color: rgb(202, 0, 0);
   font-weight: bold;
   text-decoration-line: underline;
 }
 
 #GameBoard #PressSpaceText {
-  color: #2e7ecb;
+  color: rgb(46, 126, 203);
   font-weight: bold;
 }
 
@@ -79,8 +79,8 @@ footer {
   object-position: bottom;
   flex-shrink: 0;
   padding-top: 1em;
-  background-color: #ffffff;
-  color: #4b4c4d;
+  background-color: rgb(255, 255, 255);
+  color: rgb(75, 76, 77);
 }
 
 footer ul {
@@ -120,7 +120,7 @@ footer .social > a {
   display: inline-block;
   text-align: center;
   border-radius: 50%;
-  border: 1px solid #ccc;
+  border: 1px solid rgb(204, 204, 204);
   margin: 0 0.5em;
   color: inherit;
   opacity: 0.75;
