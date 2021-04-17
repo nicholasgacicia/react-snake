@@ -1,13 +1,157 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Old+Standard+TT:wght@700&family=Roboto:wght@500&display=swap');
+
+html,
+.App {
+  text-align: center;
+}
+
+.App {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
   margin: 0;
+  font-family: 'Roboto', 'Montserrat', 'Old Standard TT', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+header {
+  margin: 0.5em 0 0.5em 0;
+}
+
+main {
+  flex: 1 0 auto;
+  padding-top: 2.5em;
+  background-color: rgb(38, 38, 48);
+  color: rgb(245, 245, 245);
+}
+
+#GameBoard {
+  position: relative;
+  margin: auto;
+  border-style: solid;
+}
+
+#GameBoard .Block {
+  position: absolute;
+}
+
+#GameBoard #GameOver {
+  text-align: center;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-around;
+}
+
+#GameBoard #Score {
+  position: relative;
+  top: 110%;
+  text-align: center;
+  font-weight: bold;
+}
+
+#GameBoard #GameOverText {
+  color: #ca0000;
+  font-weight: bold;
+  text-decoration-line: underline;
+}
+
+#GameBoard #PressSpaceText {
+  color: #2e7ecb;
+  font-weight: bold;
+}
+
+li {
+  list-style: none;
+  margin: 4px;
+}
+
+p {
+  text-emphasis: bold;
+  color: white;
+  padding-top: 1em;
+}
+
+footer {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  object-position: bottom;
+  flex-shrink: 0;
+  padding-top: 1em;
+  background-color: #ffffff;
+  color: #4b4c4d;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+footer ul {
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 0.85em;
+  line-height: 0.25em;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+footer li {
+  padding: 0 1.5em;
+}
+
+footer ul a {
+  text-decoration: none;
+  opacity: 0.75;
+  color: inherit;
+}
+
+footer ul a:hover {
+  opacity: 1;
+}
+
+footer .social {
+  text-align: center;
+  padding-bottom: 0.75em;
+}
+
+footer .social > a {
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin: 0 0.5em;
+  color: inherit;
+  opacity: 0.75;
+}
+
+footer .social > a:hover {
+  opacity: 1;
+}
+
+.ion-social-linkedin:hover {
+  color: rgb(72, 130, 189);
+}
+
+.ion-social-github:hover {
+  color: rgb(34, 39, 46);
+}
+
+.ion-social-twitter:hover {
+  color: rgb(29, 161, 242);
+}
+
+.ion-social-facebook:hover {
+  color: rgb(68, 105, 176);
+}
+
+.ion-social-instagram:hover {
+  color: rgb(213, 69, 125);
+}
+
+footer .copyright {
+  text-align: center;
+  font-size: 0.75em;
+  color: #aaa;
 }
